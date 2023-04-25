@@ -1,6 +1,9 @@
 .projects {
     &__wrapper {
         margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
     }
 }
 
@@ -20,6 +23,10 @@
 
     &--content {
         padding: 2rem 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     &--tags {
@@ -30,5 +37,10 @@
 
     & p {
         color: $clr-secondary-200;
+    }
+
+    &--buttons {
+        display: flex;
+        gap: 1rem;
     }
 }

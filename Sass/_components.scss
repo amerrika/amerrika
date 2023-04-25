@@ -26,6 +26,15 @@
 
 .btn--link {
     @extend .btn;
+    border: 1px solid $clr-primary;
+    color: $clr-primary;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $clr-primary;
+        color: $clr-accent-900;
+    }
 }
 
 

@@ -89,7 +89,7 @@ section {
   color: #fbfbfb;
 }
 
-.btn, .btn--right, .btn--left {
+.btn, .btn--link, .btn--right, .btn--left {
   display: inline-block;
   padding: 10px 20px;
   border: none;
@@ -97,7 +97,7 @@ section {
   font-weight: 500;
   transition: all 0.2s;
 }
-.btn:hover, .btn--right:hover, .btn--left:hover {
+.btn:hover, .btn--link:hover, .btn--right:hover, .btn--left:hover {
   opacity: 0.8;
 }
 
@@ -110,6 +110,17 @@ section {
 .btn--right {
   background-color: #1d2430;
   color: #77808f;
+}
+
+.btn--link {
+  border: 1px solid #2cab75;
+  color: #2cab75;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+.btn--link:hover {
+  background: #2cab75;
+  color: #121723;
 }
 
 .section__intro--icon {
@@ -211,6 +222,9 @@ section {
 
 .projects__wrapper {
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .project__box {
@@ -226,6 +240,9 @@ section {
 }
 .project__box--content {
   padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .project__box--tags {
   display: flex;
@@ -234,6 +251,10 @@ section {
 }
 .project__box p {
   color: #77808f;
+}
+.project__box--buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
