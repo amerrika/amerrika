@@ -1,0 +1,35 @@
+.skills {
+    &__intro p {
+        color: $clr-secondary-200;
+        margin-inline: auto;
+        max-width: 80ch;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 10rem;
+    }
+
+    &__wrapper img {
+        height: 48px;
+        width: 48px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        background-color: $clr-secondary-500;
+    }
+
+    &__box p {
+        font-weight: 500;
+        color: $clr-accent-100;
+    }
+}

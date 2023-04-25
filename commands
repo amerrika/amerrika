@@ -1,0 +1,3 @@
+sass --watch /home/amer/Desktop/Portfolio_Webpage/Sass/main.scss /home/amer/Desktop/Portfolio_Webpage/main.css
+
+sass /home/amer/Desktop/Portfolio_Webpage/Sass/main.scss /home/amer/Desktop/Portfolio_Webpage/main.css

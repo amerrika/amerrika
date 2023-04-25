@@ -1,0 +1,69 @@
+.header {
+    background-color: $clr-secondary-500;
+    padding: 3rem;
+
+    &__wrapper {
+        display: flex;
+
+        & > * {
+            padding: 0 1rem;
+        }
+    
+        & a {
+            color: $clr-secondary-200;
+            font-weight: $fw-600;
+        }
+
+        & a:hover {
+            color: $clr-primary;
+        }
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        border-right: 1px solid $clr-secondary-200;
+        
+        & a {
+            color: $clr-accent-100;
+        }
+    }
+    
+    .main-nav {
+        display: flex;
+        gap: 1rem;
+        flex-grow: 2;
+    }
+}
+
+
+.hero {
+    height: 80vh;
+
+    & p {
+        color: $clr-secondary-200;
+    }
+
+    &__wrapper {
+        padding: 10rem 0;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5rem;
+        
+        &--content {
+            display: grid;
+            gap: 1rem;
+        }
+
+        &--image {
+            max-height: 350px;
+            max-width: 350px;
+            border-radius: 100%;
+            border: 5px solid $clr-primary;
+        }
+
+        & img {
+            border-radius: 100%;
+        }
+    }
+}
+
