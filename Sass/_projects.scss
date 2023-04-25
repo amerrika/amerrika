@@ -1,0 +1,34 @@
+.projects {
+    &__wrapper {
+        margin-top: 10rem;
+    }
+}
+
+
+
+.project__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $clr-secondary-500;
+    border-radius: .5rem;
+
+    &--image {
+        height: 400px;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
+
+    &--content {
+        padding: 2rem 4rem;
+    }
+
+    &--tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    & p {
+        color: $clr-secondary-200;
+    }
+}

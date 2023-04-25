@@ -1,12 +1,4 @@
 .skills {
-    &__intro p {
-        color: $clr-secondary-200;
-        margin-inline: auto;
-        max-width: 80ch;
-        text-align: center;
-        margin-top: 1.5rem;
-    }
-
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

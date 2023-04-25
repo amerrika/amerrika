@@ -79,8 +79,12 @@ body {
   background-color: $clr-accent-900;
 }
 
+section {
+  padding: 8rem 0;
+}
+
 .container {
-  width: min(1400px, 100% - 20px);
+  width: min(1200px, 100% - 20px);
   margin-inline: auto;
 }
 
@@ -94,4 +98,9 @@ body {
   font-weight: $fw-600;
   color: $clr-accent-100;
   text-align: center;
+}
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: $fw-500;
+  color: $clr-accent-100;
 }

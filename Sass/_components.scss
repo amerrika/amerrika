@@ -24,6 +24,29 @@
     color: $clr-secondary-200;
 }
 
-.icon {
-    height: 50px;
+.btn--link {
+    @extend .btn;
+}
+
+
+.section__intro {
+
+    &--icon {
+        height: 50px;
+    }
+
+    & p {
+        color: $clr-secondary-200;
+        margin-inline: auto;
+        max-width: 80ch;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+}
+
+.tag {
+    display: inline-block;
+    background-color: $clr-primary;
+    padding: 2px 1rem;
+    border-radius: 1rem;
 }

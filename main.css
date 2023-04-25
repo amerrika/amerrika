@@ -61,8 +61,12 @@ body {
   background-color: #121723;
 }
 
+section {
+  padding: 8rem 0;
+}
+
 .container {
-  width: min(1400px, 100% - 20px);
+  width: min(1200px, 100% - 20px);
   margin-inline: auto;
 }
 
@@ -77,6 +81,12 @@ body {
   font-weight: 600;
   color: #fbfbfb;
   text-align: center;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fbfbfb;
 }
 
 .btn, .btn--right, .btn--left {
@@ -102,8 +112,22 @@ body {
   color: #77808f;
 }
 
-.icon {
+.section__intro--icon {
   height: 50px;
+}
+.section__intro p {
+  color: #77808f;
+  margin-inline: auto;
+  max-width: 80ch;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #2cab75;
+  padding: 2px 1rem;
+  border-radius: 1rem;
 }
 
 .header {
@@ -162,13 +186,6 @@ body {
   border-radius: 100%;
 }
 
-.skills__intro p {
-  color: #77808f;
-  margin-inline: auto;
-  max-width: 80ch;
-  text-align: center;
-  margin-top: 1.5rem;
-}
 .skills__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -190,6 +207,33 @@ body {
 .skills__box p {
   font-weight: 500;
   color: #fbfbfb;
+}
+
+.projects__wrapper {
+  margin-top: 10rem;
+}
+
+.project__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #1d2430;
+  border-radius: 0.5rem;
+}
+.project__box--image {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.project__box--content {
+  padding: 2rem 4rem;
+}
+.project__box--tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.project__box p {
+  color: #77808f;
 }
 
 /*# sourceMappingURL=main.css.map */
