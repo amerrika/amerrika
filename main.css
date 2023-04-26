@@ -89,6 +89,10 @@ section {
   color: #fbfbfb;
 }
 
+.display-block {
+  display: block;
+}
+
 .btn, .btn--link, .btn--right, .btn--left {
   display: inline-block;
   padding: 10px 20px;
@@ -139,6 +143,20 @@ section {
   background-color: #2cab75;
   padding: 2px 1rem;
   border-radius: 1rem;
+}
+
+.email__box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2cab75;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+.email__box img {
+  height: 50px;
+  width: 50px;
 }
 
 .header {
@@ -255,6 +273,56 @@ section {
 .project__box--buttons {
   display: flex;
   gap: 1rem;
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.contact__wrapper div:last-of-type p {
+  padding: 3rem;
+  font-weight: 600;
+}
+.contact__form {
+  padding: 3rem;
+  border-top: 2px solid #2cab75;
+  border-left: 2px solid #2cab75;
+  display: grid;
+  gap: 3rem;
+}
+.contact__form label {
+  display: block;
+  color: #2cab75;
+  font-weight: 500;
+}
+.contact__form input, .contact__form textarea {
+  border: none;
+  border-bottom: 1px solid #2cab75;
+  background: none;
+  padding-top: 1rem;
+  color: #77808f;
+}
+.contact__form input:focus, .contact__form textarea:focus {
+  outline: none;
+}
+.contact__form textarea {
+  border: 1px solid #2cab75;
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact__form--group-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer {
+  background-color: #1d2430;
+  padding: 2rem;
+  color: #77808f;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
