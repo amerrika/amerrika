@@ -259,6 +259,9 @@ section {
   .hero__wrapper--image, .hero__wrapper--buttons {
     margin-inline: auto;
   }
+  .hero__wrapper--buttons {
+    font-size: 1.5rem;
+  }
   .hero__wrapper p {
     text-align: center;
   }
