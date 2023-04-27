@@ -74,3 +74,17 @@
         width: 50px;
     }
 }
+
+.about__box {
+    background: $clr-secondary-500;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.flex__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

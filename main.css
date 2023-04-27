@@ -159,6 +159,20 @@ section {
   width: 50px;
 }
 
+.about__box {
+  background: #1d2430;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.flex__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 .header {
   background-color: #1d2430;
   padding: 3rem;
@@ -286,8 +300,8 @@ section {
 }
 .contact__form {
   padding: 3rem;
-  border-top: 2px solid #2cab75;
-  border-left: 2px solid #2cab75;
+  border-top: 4px solid #2cab75;
+  border-left: 4px solid #2cab75;
   display: grid;
   gap: 3rem;
 }
@@ -323,6 +337,25 @@ footer {
   padding: 2rem;
   color: #77808f;
   font-size: 1.4rem;
+}
+
+.about__wrapper {
+  margin-top: 10rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "box1 box2" "box3 box3";
+}
+.about__wrapper .about__box:last-child {
+  grid-area: box3;
+}
+.about__wrapper p {
+  color: #77808f;
+}
+.about__wrapper ul img {
+  height: 100px;
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
