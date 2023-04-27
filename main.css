@@ -223,9 +223,6 @@ section {
   flex-grow: 2;
 }
 
-.hero {
-  height: 75vh;
-}
 .hero p {
   color: #77808f;
 }
