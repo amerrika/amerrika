@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="robots" content="noindex, follow">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,12 @@
                     <a href="#">Amer Tričić</a>
                 </div>
                 <ul class="main-nav">
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
                 <div class="header__extra">
-                    <a href="#">Contact me &#10132</a>
+                    <a href="#contact">Contact me &#10132</a>
                 </div>
             </div>
         </div>
@@ -42,12 +43,11 @@
                         </h1>
                         <p>
                             I'm an aspiring frontend developer, located in Bosnia. I spend my time on personal projects and learning
-                            more about fronted web development. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quibusdam consectetur laboriosam consequatur neque mollitia. Dolores.
+                            more about fronted web development. I have a good knowledge of english and german.
                         </p>
                         <div class="hero__wrapper--buttons">
-                            <a class="btn--left" href="#">Work With Me</a>
-                            <a class="btn--right" href="#">See My Past Work</a>
+                            <a class="btn--left" href="#contact">Work With Me</a>
+                            <a class="btn--right" href="#projects">See My Past Work</a>
                         </div>
 
                     </div>
@@ -58,7 +58,7 @@
             </div>
         </section>
         <!-- ABOUT ME -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="section__intro">
                     <img class="section__intro--icon" src="images/info.svg" alt="">
@@ -73,9 +73,8 @@
                     </div>
                     <div class="about__box">
                         <p>
-                            As a self-taught developer, without computer-science background I try to understand the basics of Web development
+                            As a self-taught developer, without programming background I try to understand the basics of Web development
                             as good as I can. 
-                            I have a good knowledge of english and german.
                         </p>
                     </div>
                     <div class="about__box">
@@ -93,15 +92,19 @@
 
         </section>
         <!-- SKILLS -->
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="container">
                 <div class="section__intro">
                     <img class="section__intro--icon" src="images/microchip.svg" alt="">
                     <h2 class="heading-secondary">Skills & Technologies</h2>
-                    <p>As a future Frontend developer my main focus was learning <span style="color:#2cab75; font-weight: 500;">JavaScript</span> fundamentals and <span style="color: #2cab75; font-weight: 500;">CSS3</span> but I got in touch
+                    <p>As a future Frontend developer my main focus was learning <span style="color:#2cab75; font-weight: 500;">JavaScript</span> fundamentals and <span style="color: #2cab75; font-weight: 500;">HTML / CSS3</span> but I got in touch
                         with various technologies and recently I started learning <span style="color:#2cab75; font-weight: 500;">basics of React</span>. </p>
                 </div>
                 <div class="skills__wrapper">
+                    <div class="skills__box">
+                        <img class="skills__box--icon" src="images/icon-html.png" alt="">
+                        <p>HTML5</p>
+                    </div>
                     <div class="skills__box">
                         <img class="skills__box--icon" src="images/icon-js.png" alt="">
                         <p>JavaScript</p>
@@ -130,15 +133,11 @@
                         <img class="skills__box--icon" src="images/icon-figma.png" alt="">
                         <p>Figma</p>
                     </div>
-                    <div class="skills__box">
-                        <img class="skills__box--icon" src="images/icon-visual-studio.png" alt="">
-                        <p>Visual Studio Code</p>
-                    </div>
                 </div>
             </div>
         </section>
         <!-- PROJECTS -->
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container">
                 <div class="section__intro">
                     <img class="section__intro--icon" src="images/code.svg" alt="">
@@ -162,8 +161,8 @@
                                 is implemented for search results. Users can add selected movie in Watchlist.
                             </p>
                             <div class="project__box--buttons">
-                                <a class="btn--link" href="#">Source</a>
-                                <a class="btn--link" href="#">Live</a>
+                                <a class="btn--link" href="https://github.com/amerrika/movieApp.git" target="_blank">Source</a>
+                                <a class="btn--link" href="https://earnest-salamander-3b74fe.netlify.app/" target="_blank">Live</a>
                             </div>
                         </div>
                     </div>
@@ -174,6 +173,7 @@
                             <div class="project__box--tags">
                                 <div class="tag">JavaScript</div>
                                 <div class="tag">API</div>
+                                <div class="tag">ASYNC</div>
                                 <div class="tag">CSS</div>
                             </div>
                             <p>
@@ -182,8 +182,8 @@
                                 click on a country to see more detailed information on a separate page.
                             </p>
                             <div class="project__box--buttons">
-                                <a class="btn--link" href="#">Source</a>
-                                <a class="btn--link" href="#">Live</a>
+                                <a class="btn--link" href="https://github.com/amerrika/Rest-Countries-API.git" target="_blank">Source</a>
+                                <a class="btn--link" href="https://taupe-beignet-5f333a.netlify.app/" target="_blank">Live</a>
                             </div>
                         </div>
                     </div>
@@ -199,8 +199,8 @@
                                 A personal/portfolio website with contact form.
                             </p>
                             <div class="project__box--buttons">
-                                <a class="btn--link" href="#">Source</a>
-                                <a class="btn--link" href="#">Live</a>
+                                <a class="btn--link" href="https://github.com/amerrika/Portfolio_Webpage.git" target="_blank">Source</a>
+                                <a class="btn--link" href="https://ornate-naiad-732621.netlify.app/" target="_blank">Live</a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
             </div>
         </section>
         <!-- CONTACT -->
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <div class="contact__wrapper">
                     <div>
