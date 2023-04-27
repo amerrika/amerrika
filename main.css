@@ -93,7 +93,8 @@ section {
   display: block;
 }
 
-.btn, .btn--link, .btn--right, .btn--left {
+.btn, .btn--submit, .btn--link, .btn--right, .btn--left {
+  cursor: pointer;
   display: inline-block;
   padding: 10px 20px;
   border: none;
@@ -101,7 +102,7 @@ section {
   font-weight: 500;
   transition: all 0.2s;
 }
-.btn:hover, .btn--link:hover, .btn--right:hover, .btn--left:hover {
+.btn:hover, .btn--submit:hover, .btn--link:hover, .btn--right:hover, .btn--left:hover {
   opacity: 0.8;
 }
 
@@ -125,6 +126,16 @@ section {
 .btn--link:hover {
   background: #2cab75;
   color: #121723;
+}
+
+.btn--submit {
+  background-color: transparent;
+  border: 1px solid #2cab75;
+  color: #fbfbfb;
+}
+.btn--submit:hover {
+  border: 1px solid #fbfbfb;
+  color: #2cab75;
 }
 
 .section__intro--icon {
