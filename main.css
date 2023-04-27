@@ -75,6 +75,11 @@ section {
   font-weight: 700;
   color: #fbfbfb;
 }
+@media screen and (max-width: 576px) {
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+}
 
 .heading-secondary {
   font-size: 3rem;
@@ -91,6 +96,10 @@ section {
 
 .display-block {
   display: block;
+}
+
+.display-none {
+  display: none;
 }
 
 .btn, .btn--submit, .btn--link, .btn--right, .btn--left {
@@ -238,6 +247,31 @@ section {
 }
 .hero__wrapper img {
   border-radius: 100%;
+}
+@media screen and (max-width: 992px) {
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__wrapper {
+    display: none;
+  }
+  .hero__wrapper--image, .hero__wrapper--buttons {
+    margin-inline: auto;
+  }
+  .hero__wrapper p {
+    text-align: center;
+  }
+  .hero__wrapper--mobile {
+    display: grid;
+    gap: 2rem;
+  }
+  .hero__wrapper--mobile img {
+    border-radius: 100%;
+  }
 }
 
 .skills__wrapper {

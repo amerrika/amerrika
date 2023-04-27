@@ -55,6 +55,25 @@
                         <img src="images/hero-img.jpg" alt="">
                     </div>
                 </div>
+                <!-- HERO WRAPPER MOBILE -->
+                <div class="hero__wrapper--mobile display-none">
+                    <h1 class="heading-primary">
+                        Hi, I'm Amer & <br>
+                        I am on my way to become an awesome frontend developer.
+                    </h1>
+                    <div class="hero__wrapper--image">
+                        <img src="images/hero-img.jpg" alt="">
+                    </div>
+                    <p>
+                        I'm an aspiring frontend developer, located in Bosnia. I spend my time on personal projects and learning
+                        more about fronted web development. I have a good knowledge of english and german.
+                    </p>
+                    <div class="hero__wrapper--buttons">
+                        <a class="btn--left" href="#contact">Work With Me</a>
+                        <a class="btn--right" href="#projects">See My Past Work</a>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- ABOUT ME -->
@@ -223,7 +242,7 @@
                     </div>
                     <div>
                         <p class="heading-tertiary">Get in touch.</p>
-                        <form action="mailto:amer.tricic@live.com" method="post" enctype="text/plain" class="contact__form">
+                        <form id="my-form" action="https://formspree.io/f/xnqylkdz" method="post" class="contact__form">
                             <div class="contact__form--group-wrapper">
                                 <div class="contact__form--group">
                                     <label for="full-name">Full name</label>
@@ -238,6 +257,7 @@
                                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
                             </div>
                             <button type="submit" class="btn--submit">Send</button>
+                            <p id="my-form-status"></p>
                         </form>
                     </div>
                 </div>
@@ -250,5 +270,38 @@
             <p> &copy; 2023. All rights reserved. . </p>
         </div>
     </footer>
+    <!-- FORM -->
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 </html>

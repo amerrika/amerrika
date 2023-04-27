@@ -65,5 +65,35 @@
             border-radius: 100%;
         }
     }
+
+    @media screen and (max-width: 992px) {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__wrapper--image,
+        &__wrapper--buttons {
+            margin-inline: auto;
+        }
+        &__wrapper p {
+            text-align: center;
+        }
+        &__wrapper--mobile {
+            display: grid;
+            gap: 2rem;
+        }
+        &__wrapper--mobile img {
+            border-radius: 100%;
+        }
+    }
 }
 
