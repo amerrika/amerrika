@@ -29,6 +29,11 @@
                 </div>
                 <button class="btn-toggle display-none"><img src="images/hamburger.png" alt=""></button>
             </div>
+            <ul class="main-nav-mobile display-none">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
         </div>
     </header>
 
@@ -320,7 +325,7 @@
     -->
     <script>
         document.querySelector(".btn-toggle").addEventListener("click", () => {
-            document.querySelector(".main-nav").classList.toggle("display-flex")
+            document.querySelector(".main-nav-mobile").classList.toggle("display-block")
         })
     </script>
 </body>

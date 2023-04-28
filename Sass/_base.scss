@@ -113,10 +113,9 @@ section {
   font-weight: $fw-500;
   color: $clr-accent-100;
 }
-.display-flex { 
+.display-block { 
   // Class for mobile version for main-nav toggle
-  display: flex !important;
-  justify-content: space-around;
+  display: block !important;
 }
 .display-none {
   display: none;

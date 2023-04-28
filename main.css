@@ -94,9 +94,8 @@ section {
   color: #fbfbfb;
 }
 
-.display-flex {
-  display: flex !important;
-  justify-content: space-around;
+.display-block {
+  display: block !important;
 }
 
 .display-none {
@@ -521,10 +520,16 @@ footer {
 @media (max-width: 576px) {
   .header .main-nav {
     display: none;
-    position: absolute;
-    width: 100%;
-    top: 200%;
   }
+}
+.header .main-nav-mobile a {
+  color: #fbfbfb;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.header .main-nav-mobile li {
+  text-align: center;
 }
 @media (max-width: 576px) {
   .header__extra {
