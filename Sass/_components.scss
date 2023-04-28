@@ -52,6 +52,20 @@
     }
 }
 
+.btn-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: all .2s ease-in;
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    @media (max-width: $bp-sm){
+        display: block;
+    }
+}
+
 .section__intro {
 
     &--icon {

@@ -1,0 +1,51 @@
+.header {
+    background-color: $clr-secondary-500;
+    padding: 3rem;
+
+    &__wrapper {
+        display: flex;
+
+        & > * {
+            padding: 0 1rem;
+        }
+    
+        & a {
+            color: $clr-secondary-200;
+            font-weight: $fw-600;
+        }
+
+        & a:hover {
+            color: $clr-primary;
+        }
+
+        @media (max-width: $bp-sm) {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        border-right: 1px solid $clr-secondary-200;
+        
+        & a {
+            color: $clr-accent-100;
+        }
+    }
+    
+    .main-nav {
+        display: flex;
+        gap: 1rem;
+        flex-grow: 2;
+
+        @media (max-width: $bp-sm){
+            display: none;
+        }
+    }
+
+    &__extra {
+        @media (max-width: $bp-sm){
+            display: none;
+        }
+    }
+}
