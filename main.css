@@ -461,19 +461,14 @@ footer {
   margin-top: 10rem;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "box1 box2" "box3 box3";
 }
-.about__wrapper .about__box:last-child {
-  grid-area: box3;
+@media (min-width: 992px) {
+  .about__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .about__wrapper p {
   color: #77808f;
-}
-.about__wrapper ul img {
-  height: 100px;
-  max-width: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
