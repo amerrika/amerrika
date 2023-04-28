@@ -4,6 +4,7 @@
 
     &__wrapper {
         display: flex;
+        position: relative; // for mobile version
 
         & > * {
             padding: 0 1rem;
@@ -40,6 +41,9 @@
 
         @media (max-width: $bp-sm){
             display: none;
+            position: absolute;
+            width: 100%;
+            top: 200%;
         }
     }
 

@@ -94,8 +94,9 @@ section {
   color: #fbfbfb;
 }
 
-.display-block {
-  display: block;
+.display-flex {
+  display: flex !important;
+  justify-content: space-around;
 }
 
 .display-none {
@@ -151,6 +152,7 @@ section {
 
 .btn-toggle {
   cursor: pointer;
+  height: 40px;
   border: none;
   background-color: transparent;
   transition: all 0.2s ease-in;
@@ -486,6 +488,7 @@ footer {
 }
 .header__wrapper {
   display: flex;
+  position: relative;
 }
 .header__wrapper > * {
   padding: 0 1rem;
@@ -518,6 +521,9 @@ footer {
 @media (max-width: 576px) {
   .header .main-nav {
     display: none;
+    position: absolute;
+    width: 100%;
+    top: 200%;
   }
 }
 @media (max-width: 576px) {
