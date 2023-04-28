@@ -41,12 +41,14 @@
 .btn--submit {
     @extend .btn;
     background-color: transparent;
-    border: 1px solid $clr-primary;
+    border: 1px solid $clr-accent-100;
     color: $clr-accent-100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
     &:hover {
-        border: 1px solid $clr-accent-100;
-        color: $clr-primary;
+        background-color: $clr-accent-100;
+        color: $clr-accent-900;
     }
 }
 

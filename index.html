@@ -174,6 +174,7 @@
                                 <div class="tag">Pagination</div>
                                 <div class="tag">API</div>
                                 <div class="tag">Error Handling</div>
+                                <div class="tag">DOM Updating Algorithm</div>
                             </div>
                             <p>
                                 Movie App that fetch data from themoviedb API and displays some informations about a movie. Built with vanilla JavaScript using MVC pattern. Pagination
@@ -230,6 +231,108 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="contact__wrapper">
+                    <div class="contact__wrapper--col-1">
+                        <div>
+                            <h2 class="heading-secondary">Let's chat.</h2>
+                            <p>Tell me about your projects and internship opportunities.</p>
+                        </div>
+                        <div class="contact__social">
+                            <div class="contact__social--box">
+                                <img src="images/icon-envelope.png" alt="">
+                                <span>amer.tricic@live.com</span>
+                            </div>
+                            <div class="contact__social--box">
+                                <a href="https://github.com/amerrika" target="_blank"><img src="images/icon-github.png" alt=""></a>
+                                <a href="https://github.com/amerrika" target="_blank"><span>My GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form id="my-form" action="https://formspree.io/f/xnqylkdz" method="post" class="contact__form">
+                            <div class="contact__form--group-wrapper">
+                                <div class="contact__form--group">
+                                    <label for="full-name">Full name</label>
+                                    <input type="text" name="full-name" id="full-name">
+                                </div>
+                                <div class="contact__form--group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="contact__form--group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit" class="btn--submit">Send</button>
+                            <p id="my-form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="container">
+            <p> Designed & built with ❤️ by Amer Tričić  </p>
+            <p> &copy; 2023. All rights reserved. . </p>
+        </div>
+    </footer>
+    <!-- FORM SCRIPT
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! <form id="my-form" action="https://formspree.io/f/xnqylkdz" method="post" class="contact__form">
+                            <div class="contact__form--group-wrapper">
+                                <div class="contact__form--group">
+                                    <label for="full-name">Full name</label>
+                                    <input type="text" name="full-name" id="full-name">
+                                </div>
+                                <div class="contact__form--group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="contact__form--group">
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn--submit">Send</button>
+                            <p id="my-form-status"></p>
+                        </form>
+        form.addEventListener("submit", handleSubmit)
+    </script>
+    -->
+</body>
+</html>
+
+<!-- OLD CONTACT 
+<section id="contact" class="contact">
+            <div class="container">
+                <div class="contact__wrapper">
                     <div>
                         <h2 class="heading-secondary" style="text-align: left">
                             <span class="display-block">Let's chat.</span>
@@ -263,45 +366,4 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p> Designed & built with ❤️ by Amer Tričić  </p>
-            <p> &copy; 2023. All rights reserved. . </p>
-        </div>
-    </footer>
-    <!-- FORM -->
-    <script>
-        var form = document.getElementById("my-form");
-        
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("my-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset()
-            } else {
-              response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                  status.innerHTML = "Oops! There was a problem submitting your form"
-                }
-              })
-            }
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
-</body>
-</html>
+-->

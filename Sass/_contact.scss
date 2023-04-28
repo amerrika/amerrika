@@ -1,0 +1,125 @@
+.contact {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & div:first-child p {
+            font-size: 2.3rem;
+            font-weight: $fw-500;
+            color: $clr-accent-100;
+        }
+
+        & > * {
+            padding: 2rem;
+            @media (max-width: 992px) {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+    }
+
+    // Social Meida
+    &__social {
+        display: grid;
+        gap: 2rem;
+        &--box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: $clr-accent-100;
+
+            & img {
+                height: 50px;
+                width: 50px;
+            }
+
+            & a {
+                color: $clr-accent-100;
+            }
+        }
+
+        @media (max-width: 992px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    // Contact Form
+    &__form {
+        padding: 3rem;
+        border-left: 2px solid $clr-secondary-500;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media (max-width: 992px) {
+            border: 0;
+            padding: 0;
+        }
+
+        & label {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: $clr-accent-100;
+            font-weight: $fw-500;
+        }
+
+        & input, textarea {
+            width: 100%;
+            border: none;
+            background-color: $clr-secondary-500;
+            padding: 1rem;
+            color: $clr-accent-100;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & textarea {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+}
+
+.contact__form--group-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+
+// Ne znam selektovati prvi div unutar contact__wrapper; first-child ne radi :(
+.contact__wrapper--col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+   & h2 {
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+   }
+   & p {
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+   }
+    
+}
