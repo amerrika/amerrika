@@ -318,11 +318,27 @@ section {
   object-fit: cover;
   border-radius: 0.5rem;
 }
+@media (max-width: 992px) {
+  .project__box--image {
+    height: 250px;
+  }
+}
 .project__box--content {
   padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media (max-width: 992px) {
+  .project__box--content {
+    padding: 0;
+    gap: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .project__box--content h3 {
+    text-align: center;
+  }
 }
 .project__box--tags {
   display: flex;
@@ -335,6 +351,13 @@ section {
 .project__box--buttons {
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 992px) {
+  .project__box {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
 }
 
 .contact__wrapper {
