@@ -74,12 +74,16 @@ $bp-sm: 576px;
 /* General styling */
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: $ff-primary;
   font-weight: $fw-400;
   line-height: 1.5;
 
   background-color: $clr-accent-900;
+
+  @media(max-width: $bp-md){
+    font-size: 1.6rem;
+  }
 }
 
 section {
