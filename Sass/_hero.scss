@@ -1,4 +1,6 @@
 .hero {
+    padding-bottom: 0;
+
     & p {
         color: $clr-secondary-200;
     }
@@ -40,6 +42,7 @@
     }
 
     @media screen and (max-width: $bp-sm) {
+        padding-bottom: 4rem;
 
         &__wrapper {
             display: none;

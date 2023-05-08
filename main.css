@@ -64,6 +64,11 @@ body {
 section {
   padding: 8rem 0;
 }
+@media (max-width: 576px) {
+  section {
+    padding: 4rem 0;
+  }
+}
 
 .container {
   width: min(1200px, 100% - 20px);
@@ -227,6 +232,9 @@ section {
   flex-wrap: wrap;
 }
 
+.hero {
+  padding-bottom: 0;
+}
 .hero p {
   color: #77808f;
 }
@@ -263,6 +271,9 @@ section {
   }
 }
 @media screen and (max-width: 576px) {
+  .hero {
+    padding-bottom: 4rem;
+  }
   .hero__wrapper {
     display: none;
   }
@@ -319,7 +330,6 @@ section {
   grid-template-columns: 1fr 1fr;
   background-color: #1d2430;
   border-radius: 0.5rem;
-  border: 1rem solid #1d2430;
 }
 .project__box--image {
   height: 400px;
