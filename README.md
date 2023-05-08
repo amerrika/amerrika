@@ -1,1 +1,2 @@
-# My Portfolio Website built with HTML, CSS/SCSS and JavaScript.
+# My Portfolio Website 
+Built with HTML, CSS/SCSS and JavaScript.
