@@ -49,17 +49,17 @@
 
         // Mobile navigation
         &-mobile {
-            
-
+            padding: 2rem;
 
             & a {
                 color: $clr-accent-100;
                 text-transform: uppercase;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 font-weight: $fw-600;
             }
             & li {
                 text-align: center;
+                padding: 1rem;
             }
         }
     }
