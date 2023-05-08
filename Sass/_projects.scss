@@ -35,19 +35,16 @@
             padding: 0;
             gap: 2rem;
         }
-
-        & h3 {
-            @media (max-width: $bp-md) {
-                text-align: center;
-                font-size: 2.5rem;
-            }
-        }
     }
 
     &--tags {
         display: flex;
         flex-wrap: wrap;
         gap: .5rem;
+
+        @media (max-width: $bp-sm) {
+            font-size: 1.4rem;
+        }
     }
 
     & p {

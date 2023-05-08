@@ -19,6 +19,11 @@
             max-width: 350px;
             border-radius: 100%;
             border: 5px solid $clr-primary;
+
+            @media (max-width: $bp-sm){
+                max-height: 250px;
+                max-width: 250px;
+            }
         }
 
         & img {

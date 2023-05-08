@@ -75,7 +75,7 @@ section {
   font-weight: 700;
   color: #fbfbfb;
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .heading-primary {
     font-size: 2.8rem;
   }
@@ -87,11 +87,26 @@ section {
   color: #fbfbfb;
   text-align: center;
 }
+@media (max-width: 576px) {
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+}
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #fbfbfb;
+}
+@media (max-width: 992px) {
+  .heading-tertiary {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .heading-tertiary {
+    font-size: 2rem;
+  }
 }
 
 .display-block {
@@ -230,6 +245,12 @@ section {
   border-radius: 100%;
   border: 5px solid #2cab75;
 }
+@media (max-width: 576px) {
+  .hero__wrapper--image {
+    max-height: 250px;
+    max-width: 250px;
+  }
+}
 .hero__wrapper img {
   border-radius: 100%;
 }
@@ -321,16 +342,15 @@ section {
     gap: 2rem;
   }
 }
-@media (max-width: 992px) {
-  .project__box--content h3 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-}
 .project__box--tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+@media (max-width: 576px) {
+  .project__box--tags {
+    font-size: 1.4rem;
+  }
 }
 .project__box p {
   color: #77808f;
@@ -511,6 +531,11 @@ footer {
 }
 .header .logo a {
   color: #fbfbfb;
+}
+@media (max-width: 576px) {
+  .header .logo {
+    border: 0;
+  }
 }
 .header .main-nav {
   display: flex;

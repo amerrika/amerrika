@@ -32,6 +32,10 @@
         & a {
             color: $clr-accent-100;
         }
+
+        @media (max-width: $bp-sm) {
+            border: 0;
+        }
     }
     
     .main-nav {
